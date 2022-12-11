@@ -1,0 +1,15 @@
+.pagina-sobre{
+    .titulo--sobre{
+       color: $cor-principal;
+       font-size: 40px;
+    }
+    .titulo--left-sobre{
+        margin-left: 365px;
+    }
+    .pagina-conteudo{
+        @media(min-width: $breakpoint-md){
+            padding-right: 150px;
+            padding-left: 150px;
+            }
+    }
+}

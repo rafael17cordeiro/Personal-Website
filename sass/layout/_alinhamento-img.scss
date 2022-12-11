@@ -1,0 +1,20 @@
+.img-left{
+    float: left;
+}
+
+@media(min-width:$breakpoint-md){
+    .img-left-md{
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        margin-top: -140px;
+    }
+
+    .img-right-md{
+        float: right;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: -150px;
+    }
+}
+        
