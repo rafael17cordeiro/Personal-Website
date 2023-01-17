@@ -331,6 +331,7 @@ body {
 
 .cabecalho {
   background-color: #fff;
+  border-radius: 10px;
   padding: 15px;
   position: fixed;
   width: 100%;
@@ -438,6 +439,7 @@ body {
   background-color: #3778c2;
   background-image: url(../img/cabecalho-pagina-bg.jpg);
   background-attachment: fixed;
+  border-radius: 40px;
   color: #fff;
   padding: 30px 0; }
   .depoimentos__caixa {
@@ -447,6 +449,7 @@ body {
     margin: 0 auto;
     display: block;
     box-shadow: 3px 3px 0 white;
+    border-radius: 100px;
     margin-bottom: 30px; }
   .depoimentos__texto {
     line-height: 20px;
@@ -603,6 +606,7 @@ body {
   padding-top: 120px;
   padding-bottom: 40px;
   background-image: url(../img/cabecalho-pagina-bg.jpg);
+  border-radius: 50px;
   background-repeat: repeat;
   background-attachment: fixed; }
   .pagina-cabecalho__titulo {
@@ -654,6 +658,7 @@ body {
 
 .cabecalho-home {
   background: url(../img/cabecalho-home-bg.jpg) #000 no-repeat;
+  border-radius: 50px;
   background-size: cover;
   color: #fff;
   text-align: center;
