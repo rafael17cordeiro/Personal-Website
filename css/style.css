@@ -352,7 +352,9 @@ body {
         height: 6px;
         width: var(--progress);
         background-color: #3778c2;
-        border-radius: 10px; } }
+        border-radius: 50px;
+        margin-top: 70px;
+        padding-bottom: 15px; } }
 
 .rodape {
   color: #fff; }
@@ -610,7 +612,7 @@ body {
 .pagina-cabecalho {
   background-color: #3778c2;
   color: #fff;
-  padding-top: 120px;
+  padding-top: 150px;
   padding-bottom: 40px;
   background-image: url(../img/cabecalho-pagina-bg.jpg);
   background-repeat: repeat;
@@ -661,6 +663,9 @@ body {
   .pagina-contato .pagina-conteudo {
     padding-right: 150px;
     padding-left: 150px; } }
+
+html {
+  scroll-behavior: smooth; }
 
 .cabecalho-home {
   background: url(../img/cabecalho-home-bg.jpg) #000 no-repeat;
