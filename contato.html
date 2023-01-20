@@ -13,13 +13,13 @@
     <header class="cabecalho">
         <div class="container">
             <a href="index.html" class="logo">Personal Website</a>
-            <nav class="menu-principal">
+            <nav class="menu-principal menu-principal--fechado">
                 <button class="menu-principal__btn menu-principal__btn--fechar">Abrir/Fechar menu</button>
                 <ul class="menu-principal__lista">
                     <li><a class="menu-principal__item " href="index.html">Home</a></li>
                     <li><a class="menu-principal__item" href="sobre.html">About Me</a></li>
-                    <li><a class="menu-principal__item" href="portofolio.html">GitHub</a></li>
-                    <li><a class="menu-principal__item menu-principal__item--atual" href="contato.html">Contact</a></li>
+                    <li><a class="menu-principal__item" href="portofolio.html">Portofolio</a></li>
+                    <li><a class="menu-principal__item " href="contato.html">Contact</a></li>
                 </ul>
             </nav>
             
@@ -29,16 +29,37 @@
     </header>
     <main>
         <header class="pagina-cabecalho">
-            <h1 class="pagina-cabecalho__titulo">Contact Me</h1>
+            <div class="wrapper">
+                <div class="typing-demo">
+                    <h1 class="pagina-cabecalho__titulo">Contact</h1>
+                </div>
+           
         </header>
-        <section class="container pagina-conteudo">
-            <h2 class="text-center">Feel free to send me a message whenever you want !</h2>
-            <p class="text-center"><a href="mailto:jpquintanilha@protonmail.com">rafarace17cordeiro@gmail.com</a></p>
-     
-        </section>
-        <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12270.060466213432!2d-8.802364745322393!3d39.750541469664796!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spt!4v1670442068797!5m2!1sen!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="container parent-container pagina-conteudo ">
+            <div class="email">
+            <div class="blue-box ">
+            <div class="white-box">
+                
+               <b> <a class="links-contact"href="mailto:rafael17cordeiro@gmail.com"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>rafael17cordeiro@gmail.com</a><br>
+                <a class="links-contact"href="mailto:rafarace17cordeiro@gmail.com"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>rafarace17cordeiro@gmail.com</a></b><br><br>
+                <b><a class="links-contact" href="https://www.instagram.com/rafael_17_cordeiro/"><svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                  </svg>@rafael_17_cordeiro</a><br>
+
+
+                    <a class="links-contact"href="https://twitter.com/_Rafacordeiro_ "><svg viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
+                      </svg>@_Rafacordeiro_</a></b><br>
+
+                      <b><a class="links-contact"href="https://twitter.com/_Rafacordeiro_ "><svg viewBox="0 0 24 24" width="24" height="24">
+                     <path d="M22.675 92H1.325C.593 92 0 91.407 0 90.675V22.675C0 21.943.593 21.35 1.325 21.35H11.2V14.4H9.2v-3.6h2v-1.8c0-2.2 1.4-3.6 3.6-3.6h2v3.6h-1.4c-.2 0-.4.2-.4.4v1.4h1.8l-.2 3.6h-1.6v8.5h4.2c.732 0 1.325-.593 1.325-1.325v-67.35c0-.732-.593-1.325-1.325-1.325z"></path>
+                    </svg>Rafael Cordeiro</a></b><br><br>
+            </div>
         </div>
+    </div>
+
+        </section>
+        
     </main>
     <footer class="rodape">
         <div class="rodape__linha-1">
@@ -51,7 +72,7 @@
                 <div class="rodape__coluna">
                     <h2 class="rodape__titulo">Social </h2>
                     <ul class="rodape__lista-links">
-                        <li><a class="rodape__lista-links-item" href="https://twitter.com/_Rafacordeiro_ target="_blank">Twitter</a></li>
+                        <li><a class="rodape__lista-links-item" href="https://twitter.com/_Rafacordeiro_ "target="_blank">Twitter</a></li>
                         <li><a class="rodape__lista-links-item" href="https://www.facebook.com/profile.php?id=100027095012308"target="_blank">Facebook</a></li>
                         <li><a class="rodape__lista-links-item" href="https://www.instagram.com/rafael_17_cordeiro/"target="_blank">Instagram</a></li>
                         <li><a class="rodape__lista-links-item" href="https://github.com/rafael17cordeiro?tab=repositories"target="_blank">GitHub</a></li>
@@ -62,7 +83,7 @@
                     <ul class="rodape__lista-links">
                         <li><a class="rodape__lista-links-item" href="index.html">Home</a></li>
                         <li><a class="rodape__lista-links-item" href="sobre.html">About Me</a></li>
-                        <li><a class="rodape__lista-links-item" href="portofolio.html">GitHub</a></li>
+                        <li><a class="rodape__lista-links-item" href="portofolio.html">Portofolio</a></li>
                         <li><a class="rodape__lista-links-item" href="contato.html">Contact</a></li>
                     </ul>
                 </div>

@@ -3,6 +3,12 @@
        color: $cor-principal;
        font-size: 40px;
     }
+    .titulo--sobre-esquerda{
+        color: $cor-principal;
+        font-size: 40px;
+        padding-left: 380px;
+        padding-bottom: -10px;
+     }
     .titulo--left-sobre{
         margin-left: 365px;
     }
@@ -10,6 +16,7 @@
         @media(min-width: $breakpoint-md){
             padding-right: 150px;
             padding-left: 150px;
+            padding-bottom: 100px;
             }
     }
 }
@@ -18,4 +25,23 @@
     color: black;
        font-size: 20px;
        
+}
+
+
+.menu-sobre__item{
+    text-decoration: none;
+        font-weight: bold;
+        color: #343434;
+        margin-bottom: -50px;
+        margin-left: 20px;
+        display: block;
+        font-size: 25px;
+        transition: all 350ms ease;
+}
+  
+.lista-sobre{
+    @media(max-width: $breakpoint-sm){
+        display: grid;
+        
+    }
 }

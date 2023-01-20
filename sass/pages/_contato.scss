@@ -6,3 +6,41 @@
             }
     }
 }
+
+  
+  .blue-box {
+
+      background-color: $cor-principal;
+      width: 500px;
+      padding: 7px;
+      border-radius: 26px;
+      position: absolute;
+      
+  }
+  
+  .white-box {
+      background-color: white;
+      border-radius: 20px;
+      a{
+          padding-left: 15px;
+          text-align: center;
+          font-size: 24px;
+          color: $cor-leitura;
+      }
+  }
+svg {
+    fill: $cor-principal;
+    height: 1em;
+    margin-right: 5px;
+    vertical-align: -0.125em;
+    width: 1em;
+}
+
+
+
+
+.links-contact{
+    font-style: none;
+    color: $cor-leitura;
+    text-decoration: none;
+}

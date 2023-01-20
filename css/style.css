@@ -403,7 +403,7 @@ body {
       background-image: url(../img/rodape-bg-xl.jpg); } }
 
 .container {
-  max-width: 1200px;
+  max-width: 4000px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px; }
@@ -433,18 +433,19 @@ body {
 @media (min-width: 768px) {
   .img-left-md {
     float: left;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    margin-top: -140px; }
-  .img-right-md {
-    float: right;
+    border-radius: 30px;
     margin-right: 15px;
     margin-left: 15px;
-    margin-top: -150px; } }
+    margin-top: -120px; }
+  .img-right-md {
+    float: right;
+    border-radius: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: -130px; } }
 
 .depoimentos {
   background-color: #3778c2;
-  background-image: url(../img/cabecalho-pagina-bg.jpg);
   background-attachment: fixed;
   color: #fff;
   padding: 30px 0; }
@@ -483,6 +484,61 @@ body {
       .depoimentos__pessoa {
         text-align: left; } }
 
+.mi-contact-info {
+  margin-top: 50px; }
+
+.mi-contact-infoblock {
+  padding: 20px;
+  flex-wrap: wrap; }
+
+.mi-contact-infoblock-icon {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  flex: 0 0 70px;
+  max-width: 70px;
+  border: 1px solid #3778c2;
+  text-align: center;
+  line-height: 66px;
+  margin-right: 20px; }
+
+.mi-contact-infoblock {
+  margin-top: 30px;
+  background: #3778c2;
+  padding: 30px;
+  display: flex; }
+
+span {
+  display: inline-block; }
+
+.mi-contact-infoblock-icon {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  flex: 0 0 70px;
+  max-width: 70px;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 66px;
+  margin-right: 20px; }
+
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff; }
+
+::selection {
+  background: black;
+  color: #3778c2; }
+
+html {
+  color: white; }
+
 .logo {
   background-image: url("../img/logotipo-preto.png");
   background-repeat: no-repeat;
@@ -500,6 +556,7 @@ body {
   padding-bottom: 100%;
   position: relative;
   overflow: hidden;
+  border-radius: 50px;
   margin: 0 -15px -25px -15px; }
   .mapa iframe {
     width: 100% !important;
@@ -604,6 +661,13 @@ body {
       margin-top: 100px;
       margin-bottom: 100px; } }
 
+.links {
+  color: #3778c2;
+  text-decoration: none; }
+
+.links-branco {
+  color: white; }
+
 .servico {
   padding: 30px 0;
   overflow: auto; }
@@ -623,6 +687,41 @@ body {
     padding-right: 150px;
     padding-left: 150px; } }
 
+.parent-container {
+  position: relative; }
+
+.blue-box {
+  background-color: #3778c2;
+  width: 500px;
+  padding: 7px;
+  border-radius: 26px;
+  position: absolute;
+  display: block; }
+
+.white-box {
+  background-color: white;
+  border-radius: 20px; }
+  .white-box a {
+    padding-left: 15px;
+    text-align: center;
+    font-size: 24px;
+    color: #3a3a3a; }
+
+svg {
+  fill: #3778c2;
+  height: 1em;
+  margin-right: 5px;
+  vertical-align: -0.125em;
+  width: 1em; }
+
+.email {
+  padding-top: 200px; }
+
+.links-contact {
+  font-style: none;
+  color: #3a3a3a;
+  text-decoration: none; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -637,7 +736,8 @@ html {
     font-size: 40px;
     margin-bottom: 0; }
   .cabecalho-home__role {
-    display: none; }
+    display: none;
+    margin-left: 10px; }
   @media (min-width: 768px) {
     .cabecalho-home {
       background-image: url(../img/cabecalho-home-bg-md.jpg); } }
@@ -681,9 +781,31 @@ html {
   .home__titulo__titulo--branco::after {
     background-color: #fff; }
 
+.wrapper {
+  display: grid;
+  place-items: center; }
+
+.typing-demo {
+  width: 36ch;
+  animation: typing 2s steps(22), blink 1s step-end infinite alternate;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+  overflow: hidden; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+a:hover {
+  color: #3778c2; }
+
+.teste:hover {
+  color: #3778c2; }
+
 .lista-trabalhos {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin-top: 80px; }
   .lista-trabalhos__item {
     margin-left: -15px;
     margin-right: -15px;
@@ -703,8 +825,11 @@ html {
     padding-left: 10px; }
   @media (min-width: 768px) {
     .lista-trabalhos__item {
-      margin: 0;
+      margin: 0px;
       float: left;
+      margin-bottom: 50px;
+      padding-bottom: 15px;
+      border-radius: 20px;
       list-style: none;
       background-color: #3778c2;
       overflow: hidden; }
@@ -715,7 +840,7 @@ html {
         opacity: 1; }
     .lista-trabalhos__img {
       opacity: 1;
-      transition: all 300ms ease-out; }
+      transition: all 200ms ease; }
     .lista-trabalhos__titulo {
       color: #fff;
       padding: 0;
@@ -726,19 +851,24 @@ html {
       top: 40%;
       left: 0;
       width: 100%;
-      background: url(../img/icone-olho.png) no-repeat bottom center;
+      background: url("../img/icone-olho.png") no-repeat bottom center;
       padding-bottom: 35px;
       font-size: 22px;
       opacity: 0;
-      transition: opacity 300ms ease-out; } }
-  @media (min-width: 768px) {
+      transition: opacity 200ms ease; } }
+  @media (min-width: 992px) {
     .lista-trabalhos__item {
-      list-style: none;
       width: 33.333%; } }
 
 .pagina-sobre .titulo--sobre {
   color: #3778c2;
   font-size: 40px; }
+
+.pagina-sobre .titulo--sobre-esquerda {
+  color: #3778c2;
+  font-size: 40px;
+  padding-left: 380px;
+  padding-bottom: -10px; }
 
 .pagina-sobre .titulo--left-sobre {
   margin-left: 365px; }
@@ -746,11 +876,26 @@ html {
 @media (min-width: 768px) {
   .pagina-sobre .pagina-conteudo {
     padding-right: 150px;
-    padding-left: 150px; } }
+    padding-left: 150px;
+    padding-bottom: 100px; } }
 
 .role {
   color: black;
   font-size: 20px; }
+
+.menu-sobre__item {
+  text-decoration: none;
+  font-weight: bold;
+  color: #343434;
+  margin-bottom: -50px;
+  margin-left: 20px;
+  display: block;
+  font-size: 25px;
+  transition: all 350ms ease; }
+
+@media (max-width: 576px) {
+  .lista-sobre {
+    display: grid; } }
 
 /* Slider */
 .slick-slider {

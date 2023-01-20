@@ -1,9 +1,11 @@
 .mapa{
     background: $cor-principal;
     height: 0;
+    
     padding-bottom:100%;
     position: relative;
     overflow: hidden;
+    border-radius: 50px;
     margin: 0 -15px -25px -15px;
     iframe{
         width: 100% !important;
