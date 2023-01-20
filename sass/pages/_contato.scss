@@ -8,26 +8,7 @@
 }
 
   
-  .blue-box {
-
-      background-color: $cor-principal;
-      width: 500px;
-      padding: 7px;
-      border-radius: 26px;
-      position: absolute;
-      
-  }
-  
-  .white-box {
-      background-color: white;
-      border-radius: 20px;
-      a{
-          padding-left: 15px;
-          text-align: center;
-          font-size: 24px;
-          color: $cor-leitura;
-      }
-  }
+ 
 svg {
     fill: $cor-principal;
     height: 1em;
@@ -43,7 +24,7 @@ svg {
         text-decoration: none;
         font-size: 25px;
         text-align: left;
-         margin-top: 200px;
+         
          .img-contacto{
             float: right;
             border-radius: 30px;

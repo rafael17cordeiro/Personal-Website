@@ -626,22 +626,6 @@ body {
     padding-right: 150px;
     padding-left: 150px; } }
 
-.blue-box {
-  background-color: #3778c2;
-  width: 500px;
-  padding: 7px;
-  border-radius: 26px;
-  position: absolute; }
-
-.white-box {
-  background-color: white;
-  border-radius: 20px; }
-  .white-box a {
-    padding-left: 15px;
-    text-align: center;
-    font-size: 24px;
-    color: #3a3a3a; }
-
 svg {
   fill: #3778c2;
   height: 1em;
@@ -656,8 +640,7 @@ svg {
     .text-contact {
       text-decoration: none;
       font-size: 25px;
-      text-align: left;
-      margin-top: 200px; }
+      text-align: left; }
       .text-contact .img-contacto {
         float: right;
         border-radius: 30px;
