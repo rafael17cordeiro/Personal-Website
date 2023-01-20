@@ -13,11 +13,12 @@
         margin-left: 365px;
     }
     .pagina-conteudo{
-        @media(min-width: $breakpoint-md){
+        @media(min-width: $breakpoint-sm){
             padding-right: 150px;
             padding-left: 150px;
             padding-bottom: 100px;
             }
+            
     }
 }
 
@@ -29,19 +30,49 @@
 
 
 .menu-sobre__item{
-    text-decoration: none;
+         &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            font-size: 35px;
+          }
+        text-decoration: none;
         font-weight: bold;
-        color: #343434;
-        margin-bottom: -50px;
-        margin-left: 20px;
-        display: block;
+        color: $cor-leitura;
+        font-size: 0;
+    @media(min-width: $breakpoint-sm){
+        font-size: 0px;
+        display: inline;
+        transition: all 350ms ease;
+    }
+    @media(min-width: $breakpoint-md){
+        
+        text-decoration: none;
+        font-weight: bold;
+        color: $cor-leitura;
+        display: inline;
         font-size: 25px;
         transition: all 350ms ease;
-}
-  
-.lista-sobre{
-    @media(max-width: $breakpoint-sm){
-        display: grid;
         
     }
+    @media(min-width: $breakpoint-lg){
+        
+        text-decoration: none;
+        font-weight: bold;
+        color: $cor-leitura;
+        display: inline;
+        font-size: 25px;
+        transition: all 350ms ease;
+    }
+    @media(min-width: $breakpoint-xl){
+        
+        text-decoration: none;
+        font-weight: bold;
+        color: $cor-leitura;
+        display: inline;
+        font-size: 25px;
+        transition: all 350ms ease;
+       
+    }
+       
 }
+  

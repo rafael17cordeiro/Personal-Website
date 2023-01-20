@@ -1,9 +1,9 @@
 .pagina-contato{
     .pagina-conteudo{
-        @media(min-width: $breakpoint-md){
-            padding-right: 150px;
-            padding-left: 150px;
-            }
+            @media(min-width: $breakpoint-md){
+                padding-right: 150px;
+                padding-left: 150px;
+                }
     }
 }
 
@@ -37,10 +37,26 @@ svg {
 }
 
 
+.text-contact{
+    
+     @media(min-width: $breakpoint-xl){
+        text-decoration: none;
+        font-size: 25px;
+        text-align: left;
+         margin-top: 200px;
+         .img-contacto{
+            float: right;
+            border-radius: 30px;
+            margin-right: 15px;
+            margin-left: 15px;
+            padding-top: -300px;
+         }
+        
+        }
+   
+        
 
-
-.links-contact{
     font-style: none;
     color: $cor-leitura;
-    text-decoration: none;
+   
 }

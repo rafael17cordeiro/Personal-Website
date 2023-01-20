@@ -23,11 +23,13 @@
         border-left: 1px solid #000;
         padding-left: 10px;
     }
-    @media(min-width: $breakpoint-md){
+    @media(min-width: $breakpoint-sm){
         &__item{
             margin: 0px;
             float: left;
+
             margin-bottom: 50px;
+            
             padding-bottom: 15px;
             border-radius: 20px;
             list-style: none;

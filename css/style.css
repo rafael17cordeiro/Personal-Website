@@ -430,6 +430,23 @@ body {
 .img-left {
   float: left; }
 
+.img-left {
+  float: left; }
+
+@media (min-width: 768px) {
+  .img-left-md {
+    float: left;
+    border-radius: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: -120px; }
+  .img-right-md {
+    float: right;
+    border-radius: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: -130px; } }
+
 @media (min-width: 768px) {
   .img-left-md {
     float: left;
@@ -484,61 +501,6 @@ body {
       .depoimentos__pessoa {
         text-align: left; } }
 
-.mi-contact-info {
-  margin-top: 50px; }
-
-.mi-contact-infoblock {
-  padding: 20px;
-  flex-wrap: wrap; }
-
-.mi-contact-infoblock-icon {
-  display: inline-block;
-  height: 70px;
-  width: 70px;
-  flex: 0 0 70px;
-  max-width: 70px;
-  border: 1px solid #3778c2;
-  text-align: center;
-  line-height: 66px;
-  margin-right: 20px; }
-
-.mi-contact-infoblock {
-  margin-top: 30px;
-  background: #3778c2;
-  padding: 30px;
-  display: flex; }
-
-span {
-  display: inline-block; }
-
-.mi-contact-infoblock-icon {
-  display: inline-block;
-  height: 70px;
-  width: 70px;
-  flex: 0 0 70px;
-  max-width: 70px;
-  border: 1px solid white;
-  text-align: center;
-  line-height: 66px;
-  margin-right: 20px; }
-
-body {
-  margin: 0;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fff; }
-
-::selection {
-  background: black;
-  color: #3778c2; }
-
-html {
-  color: white; }
-
 .logo {
   background-image: url("../img/logotipo-preto.png");
   background-repeat: no-repeat;
@@ -549,30 +511,6 @@ html {
   margin: 0; }
   .logo--branco {
     background-image: url("../img/logotipo-branco.png"); }
-
-.mapa {
-  background: #3778c2;
-  height: 0;
-  padding-bottom: 100%;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50px;
-  margin: 0 -15px -25px -15px; }
-  .mapa iframe {
-    width: 100% !important;
-    height: 100% !important;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  @media (min-width: 450px) {
-    .mapa {
-      padding-bottom: 60%; } }
-  @media (min-width: 768px) {
-    .mapa {
-      padding-bottom: 50%; } }
-  @media (min-width: 992px) {
-    .mapa {
-      padding-bottom: 25%; } }
 
 .menu-principal__btn {
   display: block;
@@ -609,7 +547,7 @@ html {
   color: #343434;
   margin-bottom: 10px;
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   transition: all 350ms ease; }
 
 .menu-principal__item--atual {
@@ -630,6 +568,7 @@ html {
   color: #fff;
   padding-top: 150px;
   padding-bottom: 40px;
+  margin-bottom: 20px;
   background-image: url(../img/cabecalho-pagina-bg.jpg);
   background-repeat: repeat;
   background-attachment: fixed; }
@@ -687,16 +626,12 @@ html {
     padding-right: 150px;
     padding-left: 150px; } }
 
-.parent-container {
-  position: relative; }
-
 .blue-box {
   background-color: #3778c2;
   width: 500px;
   padding: 7px;
   border-radius: 26px;
-  position: absolute;
-  display: block; }
+  position: absolute; }
 
 .white-box {
   background-color: white;
@@ -714,13 +649,21 @@ svg {
   vertical-align: -0.125em;
   width: 1em; }
 
-.email {
-  padding-top: 200px; }
-
-.links-contact {
+.text-contact {
   font-style: none;
-  color: #3a3a3a;
-  text-decoration: none; }
+  color: #3a3a3a; }
+  @media (min-width: 1200px) {
+    .text-contact {
+      text-decoration: none;
+      font-size: 25px;
+      text-align: left;
+      margin-top: 200px; }
+      .text-contact .img-contacto {
+        float: right;
+        border-radius: 30px;
+        margin-right: 15px;
+        margin-left: 15px;
+        padding-top: -300px; } }
 
 html {
   scroll-behavior: smooth; }
@@ -796,11 +739,11 @@ html {
   from {
     width: 0; } }
 
-a:hover {
-  color: #3778c2; }
-
-.teste:hover {
-  color: #3778c2; }
+.hover:hover {
+  color: #3778c2;
+  transform: scale(1);
+  cursor: pointer;
+  font-size: 35px; }
 
 .lista-trabalhos {
   list-style: none;
@@ -823,7 +766,7 @@ a:hover {
     margin-left: 15px;
     border-left: 1px solid #000;
     padding-left: 10px; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .lista-trabalhos__item {
       margin: 0px;
       float: left;
@@ -873,7 +816,7 @@ a:hover {
 .pagina-sobre .titulo--left-sobre {
   margin-left: 365px; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .pagina-sobre .pagina-conteudo {
     padding-right: 150px;
     padding-left: 150px;
@@ -886,16 +829,41 @@ a:hover {
 .menu-sobre__item {
   text-decoration: none;
   font-weight: bold;
-  color: #343434;
-  margin-bottom: -50px;
-  margin-left: 20px;
-  display: block;
-  font-size: 25px;
-  transition: all 350ms ease; }
-
-@media (max-width: 576px) {
-  .lista-sobre {
-    display: grid; } }
+  color: #3a3a3a;
+  font-size: 0; }
+  .menu-sobre__item:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    font-size: 35px; }
+  @media (min-width: 576px) {
+    .menu-sobre__item {
+      font-size: 0px;
+      display: inline;
+      transition: all 350ms ease; } }
+  @media (min-width: 768px) {
+    .menu-sobre__item {
+      text-decoration: none;
+      font-weight: bold;
+      color: #3a3a3a;
+      display: inline;
+      font-size: 25px;
+      transition: all 350ms ease; } }
+  @media (min-width: 992px) {
+    .menu-sobre__item {
+      text-decoration: none;
+      font-weight: bold;
+      color: #3a3a3a;
+      display: inline;
+      font-size: 25px;
+      transition: all 350ms ease; } }
+  @media (min-width: 1200px) {
+    .menu-sobre__item {
+      text-decoration: none;
+      font-weight: bold;
+      color: #3a3a3a;
+      display: inline;
+      font-size: 25px;
+      transition: all 350ms ease; } }
 
 /* Slider */
 .slick-slider {

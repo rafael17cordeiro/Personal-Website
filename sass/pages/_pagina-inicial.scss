@@ -95,9 +95,10 @@
     }
 }
 
-a:hover {
+.hover:hover {
     color: $cor-principal;
-}
-.teste:hover {
-    color: $cor-principal;
+        transform: scale(1);
+        cursor: pointer;
+        font-size: 35px;
+      
 }

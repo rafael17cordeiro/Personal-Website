@@ -13,15 +13,15 @@
 <body>
     <header class="cabecalho" >
         
-        <div class="container">
+        <div id="#top" class="container">
             <h1 class="logo">Personal Website</h1>
             <nav class="menu-principal menu-principal--fechado">
                 <button class="menu-principal__btn menu-principal__btn--fechar">Abrir/Fechar menu</button>
                 <ul class="menu-principal__lista">
-                    <li><a class="menu-principal__item " href="index.html">Home</a></li>
-                    <li><a class="menu-principal__item " href="sobre.html">About Me</a></li>
-                    <li><a class="menu-principal__item " href="portofolio.html">Portofolio</a></li>
-                    <li><a class="menu-principal__item " href="contato.html">Contact</a></li>
+                    <li><a class="menu-principal__item menu-principal__item--atual hover" href="index.html">Home</a></li>
+                    <li><a class="menu-principal__item hover" href="sobre.html">About Me</a></li>
+                    <li><a class="menu-principal__item hover" href="portofolio.html">Portofolio</a></li>
+                    <li><a class="menu-principal__item hover" href="contato.html">Contact</a></li>
                 </ul>
             </nav> 
         </div>
@@ -49,12 +49,14 @@
                 <h3>Software Programing</h3>
                 <p class="servico__texto">Currently my main goal is to finish high school with good grades , I am studying at
                       Domingos Sequeira hight school in operating systems programming</p>
+                     <b class="servico__texto"><p>More about it <a class="links"href="portofolio.html">here</a></p> </b>
             </section>
             <section class="servico__item">
                 <img src="img/icone-carrinho-compras.png" alt="">
                 <h3>Hobbies</h3>
                 <p class="servico__texto">I'm a teenager who always liked anything sports and adrenaline,I currently play Handball at Atletico Clube Sismaria 
                     . In addition to handball I also skate , I love the adrenaline and skating with friends , while I'm at home I like to play guitar just felling the vibe</p>
+                    <b class="servico__texto">More about it <a class="links"href="sobre.html">here</a></p> </b>
             </section>
             <section class="servico__item">
                 <img src="img/icone-cafe.png" alt="">
@@ -94,8 +96,8 @@
         <div class="rodape__linha-1">
             <div class="container">
                 <div class="rodape__coluna">
-                    <a href="index.html"class="logo logo--branco">Personal Website</a>
-                    <p>Obrigado por teres vindo visitar o meu site aqui ao lado estão as minhas redes socias caso queiras seguir-me noutras plataformas !</p>
+                    <a href="#top"class="logo logo--branco">Personal Website</a>
+                    <p>Thank you for visiting my website, here are my social networks if you want to follow me on other platforms!</p>
                 </div>
                 <div class="rodape__coluna">
                     <h2 class="rodape__titulo">Social </h2>

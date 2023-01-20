@@ -2,6 +2,10 @@
     float: left;
 }
 
+.img-left{
+    float: left;
+}
+
 @media(min-width:$breakpoint-md){
     .img-left-md{
         float: left;
@@ -19,4 +23,25 @@
         margin-top: -130px;
     }
 }
+
+@media(min-width:$breakpoint-md){
+    
+    .img-left-md{
+        float: left;
+        border-radius: 30px;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: -120px;
+    }
+
+    .img-right-md{
+        float: right;
+        border-radius: 30px;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: -130px;
+    }
+    
+}
+
         
