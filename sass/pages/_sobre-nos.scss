@@ -3,23 +3,8 @@
        color: $cor-principal;
        font-size: 40px;
     }
-    .titulo--sobre-esquerda{
-        color: $cor-principal;
-        font-size: 40px;
-        padding-left: 380px;
-        padding-bottom: -10px;
-     }
-    .titulo--left-sobre{
-        margin-left: 365px;
-    }
-    .pagina-conteudo{
-        @media(min-width: $breakpoint-sm){
-            padding-right: 150px;
-            padding-left: 150px;
-            padding-bottom: 100px;
-            }
-            
-    }
+    
+    
 }
 
 .role{
@@ -33,7 +18,7 @@
          &:hover {
             transform: scale(1.2);
             cursor: pointer;
-            font-size: 35px;
+            font-size: 28px;
           }
         text-decoration: none;
         font-weight: bold;

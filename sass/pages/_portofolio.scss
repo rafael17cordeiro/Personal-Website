@@ -23,13 +23,32 @@
         border-left: 1px solid #000;
         padding-left: 10px;
     }
-    @media(min-width: $breakpoint-sm){
+    @media(min-width: $breakpoint-xs ){
         &__item{
             margin: 0px;
             float: left;
-
             margin-bottom: 50px;
-            
+            padding-bottom: 15px;
+            border-radius: 0px;
+            list-style: none;
+            background-color: $cor-principal;
+            overflow: hidden;
+            &:hover{
+                .lista-trabalhos__img{
+                    opacity: 0.1;
+                    transform: scale(1.4);
+                }
+                .lista-trabalhos__titulo{
+                    opacity: 1;
+                }
+            }
+        }
+
+   
+        &__item{
+            margin: 0px;
+            float: left;
+            margin-bottom: 50px;
             padding-bottom: 15px;
             border-radius: 20px;
             list-style: none;
@@ -59,16 +78,19 @@
             top: 40%;
             left: 0;
             width: 100%;
-            background: url('../img/icone-olho.png') no-repeat bottom center;
+            background: url('../img/icone-lupa.png') no-repeat bottom center;
             padding-bottom: 35px;
             font-size: 22px;
             opacity: 0;
             transition: opacity 200ms ease;
         }
-    }
+    
+    
+        
     @media(min-width: $breakpoint-lg){
         &__item{
-            width: 33.333%;
+            width: 50%;
+        }
+         }
         }
     }
-}
