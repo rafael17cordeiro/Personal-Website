@@ -487,6 +487,36 @@ body {
       .depoimentos__pessoa {
         text-align: left; } }
 
+.btn {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem; }
+
+.btn:before {
+  font-size: 13;
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 0; }
+
+.btn:hover:before {
+  background-color: #fff;
+  width: 3rem; }
+
 .logo {
   background-image: url("../img/logotipo-preto.png");
   background-repeat: no-repeat;
@@ -659,17 +689,7 @@ html {
   animation: transitionIn 0.75s; }
 
 .cabecalho-home {
-  animation: transitionIn 0.75s; }
-
-@keyframes transitionIn {
-  from {
-    opacity: 0;
-    transform: rotateX(-10deg); }
-  to {
-    opacity: 1;
-    transform: rotateX(0); } }
-
-.cabecalho-home {
+  animation: transitionIn 0.75s;
   background: url(../img/cabecalho-home-bg.jpg) #000 no-repeat;
   background-size: cover;
   color: #fff;
@@ -812,11 +832,18 @@ html {
       padding-bottom: 35px;
       font-size: 22px;
       opacity: 0;
-      transition: opacity 200ms ease; } }
-
-@media (min-width: 375px) and (min-width: 992px) {
-  .lista-trabalhos__item {
-    width: 50%; } }
+      transition: opacity 200ms ease; }
+    .lista-trabalhos__item:nth-of-type(odd) {
+      clear: left; }
+    .lista-trabalhos__item {
+      width: 100%; }
+    .lista-trabalhos__img {
+      max-width: 100%;
+      height: auto; } }
+  @media (min-width: 992px) {
+    .lista-trabalhos__item {
+      width: 50%;
+      float: left; } }
 
 .pagina-sobre .titulo--sobre {
   color: #3778c2;
@@ -842,28 +869,44 @@ html {
       transition: all 350ms ease; } }
   @media (min-width: 768px) {
     .menu-sobre__item {
-      text-decoration: none;
-      font-weight: bold;
-      color: #3a3a3a;
       display: inline;
       font-size: 25px;
       transition: all 350ms ease; } }
   @media (min-width: 992px) {
     .menu-sobre__item {
-      text-decoration: none;
-      font-weight: bold;
-      color: #3a3a3a;
       display: inline;
       font-size: 25px;
       transition: all 350ms ease; } }
   @media (min-width: 1200px) {
     .menu-sobre__item {
-      text-decoration: none;
-      font-weight: bold;
-      color: #3a3a3a;
       display: inline;
       font-size: 25px;
       transition: all 350ms ease; } }
+
+.sobre_item {
+  color: #3a3a3a;
+  text-decoration: none;
+  font-size: 22px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; }
+
+.sobre_item::before {
+  margin-left: auto; }
+
+.sobre_item::after,
+.sobre_item::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #3778c2;
+  display: block;
+  transition: 0.5s; }
+
+.sobre_item:hover::after,
+.sobre_item:hover::before {
+  width: 100%; }
 
 /* Slider */
 .slick-slider {

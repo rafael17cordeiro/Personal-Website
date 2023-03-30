@@ -1,63 +1,72 @@
-.pagina-sobre{
-    .titulo--sobre{
-       color: $cor-principal;
-       font-size: 40px;
-    }
-    
-    
+.pagina-sobre {
+  .titulo--sobre {
+    color: $cor-principal;
+    font-size: 40px;
+  }
 }
 
-.role{
-    color: black;
-       font-size: 20px;
-       
+.role {
+  color: black;
+  font-size: 20px;
 }
 
-
-.menu-sobre__item{
-         &:hover {
-            transform: scale(1.2);
-            cursor: pointer;
-            font-size: 28px;
-          }
-        text-decoration: none;
-        font-weight: bold;
-        color: $cor-leitura;
-        font-size: 0;
-    @media(min-width: $breakpoint-sm){
-        font-size: 0px;
-        display: inline;
-        transition: all 350ms ease;
-    }
-    @media(min-width: $breakpoint-md){
-        
-        text-decoration: none;
-        font-weight: bold;
-        color: $cor-leitura;
-        display: inline;
-        font-size: 25px;
-        transition: all 350ms ease;
-        
-    }
-    @media(min-width: $breakpoint-lg){
-        
-        text-decoration: none;
-        font-weight: bold;
-        color: $cor-leitura;
-        display: inline;
-        font-size: 25px;
-        transition: all 350ms ease;
-    }
-    @media(min-width: $breakpoint-xl){
-        
-        text-decoration: none;
-        font-weight: bold;
-        color: $cor-leitura;
-        display: inline;
-        font-size: 25px;
-        transition: all 350ms ease;
-       
-    }
-       
+.menu-sobre__item {
+  text-decoration: none;
+  font-weight: bold;
+  color: $cor-leitura;
+  font-size: 0;
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    font-size: 28px;
+  }
+  @media(min-width: $breakpoint-sm) {
+    font-size: 0px;
+    display: inline;
+    transition: all 350ms ease;
+  }
+  @media(min-width: $breakpoint-md) {
+    display: inline;
+    font-size: 25px;
+    transition: all 350ms ease;
+  }
+  @media(min-width: $breakpoint-lg) {
+    display: inline;
+    font-size: 25px;
+    transition: all 350ms ease;
+  }
+  @media(min-width: $breakpoint-xl) {
+    display: inline;
+    font-size: 25px;
+    transition: all 350ms ease;
+  }
 }
-  
+
+.sobre_item {
+  color: $cor-leitura;
+  text-decoration: none;
+  font-size: 22px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sobre_item::before {
+  margin-left: auto;
+}
+
+.sobre_item::after,
+.sobre_item::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: $cor-principal;
+  display: block;
+  transition: 0.5s;
+}
+
+.sobre_item:hover::after,
+.sobre_item:hover::before {
+  width: 100%;
+}

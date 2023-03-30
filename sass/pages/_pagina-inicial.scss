@@ -1,121 +1,112 @@
-    html{
-        scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    animation: transitionIn 0.75s;
+  }
+  
+  .cabecalho-home {
+    animation: transitionIn 0.75s;
+    
+    background: url(../img/cabecalho-home-bg.jpg) #000 no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    padding-top: 150px;
+    
+    &__titulo {
+      font-size: 40px;
+      margin-bottom: 0;
     }
-    .container {
-        animation: transitionIn 0.75s;
+    
+    &__role {
+      display: none;
+      margin-left: 10px;
+    } 
+    
+    @media (min-width: $breakpoint-md) {
+      background-image: url(../img/cabecalho-home-bg-md.jpg);
     }
-    .cabecalho-home {
-        animation: transitionIn 0.75s;
-    }
-        @keyframes transitionIn{
-        from{
-            opacity: 0;
-            transform: rotateX(-10deg);
-        }
-        to{
-        opacity: 1;
-        transform: rotateX(0);
-        }  
-    }
-
-    .cabecalho-home{
-        background: url(../img/cabecalho-home-bg.jpg) #000 no-repeat;
-        background-size: cover;
+  
+    @media (min-width: $breakpoint-lg) {
+      height: 100vh;
+      
+      &__titulo {
+        font-size: 60px;
+        margin-top: 250px;
+      }
+      
+      &__subtitulo {
+        font-size: 22px;
+      }
+      
+      &__role {
+        display: block;
+        position: absolute;
+        background: url(../img/icone-mouse.png) no-repeat center right;
         color: #fff;
-        text-align: center;
-        padding: 50px 0;
-        padding-top: 150px;
-        &__titulo{
-            font-size: 40px;
-            margin-bottom: 0;
-        }
-        
-        &__role{
-            display: none;
-            margin-left: 10px;
-            
-        } 
-
-    @media(min-width: $breakpoint-md){
-        background-image: url(../img/cabecalho-home-bg-md.jpg)
-        }
-
-        @media(min-width: $breakpoint-lg){
-            height:100vh;
-            &__titulo{
-                font-size: 60px;
-                margin-top: 250px;
-            }
-            &__subtitulo{
-                font-size: 22px;
-            }
-            &__role{
-                display: block;
-                position: absolute;
-                background: url(../img/icone-mouse.png) no-repeat center right;
-                color: #fff;
-                bottom: 10px;
-                left: 50%;
-                height: 50px;
-                width: 160px;
-                text-align: left;
-                font-size: 20px;
-                text-decoration: none;
-                line-height: 45px;
-                margin-left: -95px;
-
-            }
+        bottom: 10px;
+        left: 50%;
+        height: 50px;
+        width: 160px;
+        text-align: left;
+        font-size: 20px;
+        text-decoration: none;
+        line-height: 45px;
+        margin-left: -95px;
+      }
     }
-
-        @media(min-width: $breakpoint-xl){
-            background-image: url(../img/cabecalho-home-bg-xl.jpg) ;
-        }
+  
+    @media (min-width: $breakpoint-xl) {
+      background-image: url(../img/cabecalho-home-bg-xl.jpg);
     }
-
-    .home{
-        &__titulo{
-            text-align: center;
-            text-transform: uppercase;
-            &__titulo::after{
-                content: '';
-                display: block;
-                width: 50px;
-                height: 3px;
-                background-color: #3778c2;
-                margin: 0 auto;
-                margin-top: 15px;
-            }
-            &__titulo--branco::after{
-                background-color: #fff;
-            }
-        }
+  }
+  
+  .home {
+    &__titulo {
+      text-align: center;
+      text-transform: uppercase;
+  
+      &__titulo::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: #3778c2;
+        margin: 0 auto;
+        margin-top: 15px;
+      }
+  
+      &__titulo--branco::after {
+        background-color: #fff;
+      }
     }
-
-
-    .wrapper{
-        
-        display: grid;
-        place-items: center;
+  }
+  
+  .wrapper {
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 36ch;
+    animation: typing 2s steps(22), blink 1s step-end infinite alternate;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
     }
-
-    .typing-demo{
-        width: 36ch;
-        animation: typing 2s steps(22),blink 1s step-end infinite alternate ;
-        animation-iteration-count: infinite;
-        white-space: nowrap;
-        overflow: hidden;
-        }
-        
-    @keyframes typing{
-        from{
-            width: 0;
-        }
-    }
-
-    .hover:hover {
-        color: $cor-principal;
-        transform: scale(1);
-            cursor: pointer;
-        
-        
-    }
+  }
+  
+  .hover:hover {
+    color: $cor-principal;
+    transform: scale(1);
+    cursor: pointer;
+  }
+  
