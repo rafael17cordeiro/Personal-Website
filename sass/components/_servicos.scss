@@ -1,5 +1,5 @@
 .servico{
-    padding: 30px 0;
+    padding: 80px 0;
     overflow: auto;
     &__item{
         text-align: center;
@@ -13,6 +13,17 @@
     
     &__texto{
         color: $cor-leitura;
+        text-align: center;
+        line-height: 22px;
     }
 
+}
+.img_servico {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.5s ease;
+}
+
+.img_servico:hover {
+    transform: rotateY(180deg);
 }

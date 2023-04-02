@@ -464,9 +464,10 @@ body {
     border-radius: 100px;
     margin-bottom: 30px; }
   .depoimentos__texto {
-    padding-top: 50px;
+    padding-top: 10px;
     line-height: 20px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    line-height: 27px; }
   .depoimentos__texto::before {
     background-image: url("../img/aspas.png");
     content: '';
@@ -486,36 +487,42 @@ body {
         margin-right: 15px; }
       .depoimentos__pessoa {
         text-align: left; } }
-
-.btn {
-  align-items: center;
-  background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.5;
-  text-decoration: none;
-  text-transform: uppercase;
-  outline: 0;
-  border: 0;
-  padding: 1rem; }
-
-.btn:before {
-  font-size: 13;
-  background-color: #fff;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  margin-right: 10px;
-  transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
-  width: 0; }
-
-.btn:hover:before {
-  background-color: #fff;
-  width: 3rem; }
+  .depoimentos .btn {
+    text-decoration: none;
+    display: grid;
+    align-items: center;
+    margin-top: -10px;
+    padding: 7px 20px;
+    border: unset;
+    cursor: pointer;
+    color: #3a3a3a;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    width: 140px;
+    height: 30px; }
+  .depoimentos .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #3a3a3a;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms; }
+  .depoimentos .btn:hover {
+    color: #e8e8e8; }
+  .depoimentos .btn:hover::before {
+    width: 100%; }
 
 .logo {
   background-image: url("../img/logotipo-preto.png");
@@ -624,7 +631,7 @@ body {
   color: white; }
 
 .servico {
-  padding: 30px 0;
+  padding: 80px 0;
   overflow: auto; }
   .servico__item {
     text-align: center;
@@ -635,52 +642,99 @@ body {
         float: left;
         width: 33.333%; } }
   .servico__texto {
-    color: #3a3a3a; }
+    color: #3a3a3a;
+    text-align: center;
+    line-height: 22px; }
+
+.img_servico {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.5s ease; }
+
+.img_servico:hover {
+  transform: rotateY(180deg); }
 
 .pagina-contato .pagina-conteudo {
-  text-align: center;
+  text-align: left;
   padding-top: 100px;
   padding-bottom: 100px; }
-  .pagina-contato .pagina-conteudo .text-contact {
-    display: flex;
-    margin: 0 auto;
-    font-size: 30px;
-    font-style: none;
-    color: #3a3a3a;
-    text-decoration: none; }
-    .pagina-contato .pagina-conteudo .text-contact:hover {
-      color: #3778c2; }
-    @media (min-width: 200px) {
-      .pagina-contato .pagina-conteudo .text-contact {
-        font-size: 18px; } }
-    @media (min-width: 375px) {
-      .pagina-contato .pagina-conteudo .text-contact {
-        font-size: 20px; } }
-    @media (min-width: 576px) {
-      .pagina-contato .pagina-conteudo .text-contact {
-        font-size: 24px; } }
-    @media (min-width: 768px) {
-      .pagina-contato .pagina-conteudo .text-contact {
-        font-size: 28px; } }
-    @media (min-width: 992px) {
-      .pagina-contato .pagina-conteudo .text-contact {
-        font-size: 30px; } }
-    @media (min-width: 1200px) {
-      .pagina-contato .pagina-conteudo .text-contact {
-        font-size: 30px; } }
-  .pagina-contato .pagina-conteudo .box {
-    background-color: white;
-    border-color: #3778c2;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
+
+.text-contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  font-size: 30px;
+  font-style: none;
+  color: #3a3a3a;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  transform: translateY(0);
+  position: relative; }
+  .text-contact:hover {
+    color: #3778c2;
+    transform: translateY(-5px); }
+  @media (min-width: 200px) {
+    .text-contact {
+      font-size: 18px; } }
+  @media (min-width: 375px) {
+    .text-contact {
+      font-size: 20px; } }
+  @media (min-width: 576px) {
+    .text-contact {
+      font-size: 24px; } }
+  @media (min-width: 768px) {
+    .text-contact {
+      font-size: 28px; } }
+  @media (min-width: 992px) {
+    .text-contact {
+      font-size: 30px; } }
+  @media (min-width: 1200px) {
+    .text-contact {
+      font-size: 30px; } }
+  .text-contact::before {
+    content: "";
+    position: absolute;
     width: 100%;
-    padding: 30px; }
-  .pagina-contato .pagina-conteudo svg {
-    fill: #3778c2;
-    height: 1em;
-    margin-right: 5px;
-    vertical-align: -0.125em;
-    width: 1em; }
+    height: 3px;
+    background-color: #3778c2;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease; }
+  .text-contact:hover::before {
+    transform: scaleX(1); }
+
+.box {
+  background-color: white;
+  border-color: #3778c2;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  width: 100%;
+  padding: 30px;
+  transform: scale(1);
+  transition: transform 0.3s ease; }
+  .box::before, .box::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    transition: all 0.3s ease; }
+  .box::before {
+    top: 0;
+    left: 0; }
+  .box::after {
+    bottom: 0;
+    right: 0; }
+  .box:hover::before, .box:hover::after {
+    width: 100%; }
+
+svg {
+  fill: #3778c2;
+  height: 1em;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 1em; }
 
 html {
   scroll-behavior: smooth; }
