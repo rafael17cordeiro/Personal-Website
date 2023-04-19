@@ -1,5 +1,5 @@
 # Personal-Website
-this rep is for my website
+My personal website where i talk about me and my future plans!
 
 
 
